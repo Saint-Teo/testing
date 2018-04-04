@@ -1,11 +1,13 @@
+#in state 0, go north until it reaches the top of the empty room
 0 X*** -> N 0   
-
 0 N*** -> X 1 
 
+#then it goes east, until it meats the east wall. Stop there
 1 *X** -> E 1   
-
 1 *E** -> X 2
 
+# goes west to clean out the rest empty spots
 2 **X* -> W 2
 
+#gets to the next line
 2 **W* -> S 1
